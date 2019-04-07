@@ -29,7 +29,7 @@ This project uses React to handle the components of the game.
 
 ## BUILDING TOOLS
 - FRONT END
-    - HTML, CSS
+    - HTML5, CSS3 (ES6)
     - Javascript and jQuery
     - Bootstrap and MDBootstrap
     - React

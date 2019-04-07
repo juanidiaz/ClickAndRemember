@@ -1,56 +1,39 @@
-# News Scraper
-![Logo](./Images/logo.png)
+# GAME: Click and Remember
 
 > **Cretaed by:**     [Juan I Diaz](http://www.idiaz.ca/) (jdi@idiaz.ca)
 
 > **Date:**           March/April 2019
 
 ## DESCRIPTION
-This **FULL STACK** project is a news scraper that will extract 20 of the latest "top sptories" in [CBC News](https://www.cbc.ca) (Canadian Broadcast Corporation) [RSS feed](https://www.cbc.ca/cmlink/rss-topstories) using node.js and other packages and frameworks. The result of the scraping will be saved in a non sequencial database (MongoDB). Once displayed, the articles can be saved and the user can add comments. These comments are kept in the database and can be read by other users.
+This **FULL STACK** project is a memory game where the user have to click on 18 images of gems. The images are arranged in three rows of six. Every time the user clicks on a gem, the location of the images is shuffled, then the user needs to clik on a gem that has not been clicked on before. If th euser clicks on a diferent gem, the images will shuffle again and the gmae will continue. If the user clocks on a previously clicked image, the game is over. The score and maximum recors is kept per browser session.
+
+This project uses React to handle the components of the game.
 
 ## INSTRUCTIONS
-- This project has been deployed to Heroku, please enter to access https://idiaz-scraper.herokuapp.com/ to see the project.
-1. If the site doesnt show any stories click on the (red) `"GET NEW ARTICLES!!!"` button to get the latest 20 top stories.
-2. Once the stories have been extracted, will be presented in the landing page showing their category, thumbnail image, title and author.
-3. Along with the information mentioned above, there will be a link to `GO TO ARTICLE` (to read the actual article) and to `SAVE ARTICLE`. This last, will allow the user to `SEE COMMENTS ` posted on this story.
-4. When an articlo is saved and the `SEE COMMENTS` is clicked, a second window (a modal) will display any old comments for this story as well as the option to add a new comment. In this window the user can delete any of the past comments.
+1. Click on a gem's image. Make sure you keep track of which image have you clicked!
+2. Once the image was clicked in the previous step the images will shuffle randomly. Now click a DIFFERENT image that has not been previously clicked on.
+3. If the image clicked hasn't been clicked on before, the score will tally up and another image needs to be clicked following steps 1 and 2.
+4. However, if you clicked on an image twice, you lost the game. Your score will be set to 0 and a new game has started.
 
-- There is a direct API link to receive *(in JSON format)* all the news stories in the system. If needed just add `/all` to the end of the URL. 
+**NOTE:** The maximum score possible is 18!
 
 ## SCREENSHOTS
-`Home page with news`
-![Survey](./Images/withNews.png)
+`Game first loaded`
+![Survey](./public/image/game.png)
 
-`Home page with no news`
-![Home page](./Images/noNews.png)
+`After loosing the game`
+![Home page](./public/image/lost.png)
 
-`Saving an article`
-![Home page](./Images/saveArticle.png)
-
-`Comments modal`
-![Survey](./Images/modal.png)
-
-`JSON output for all articles`
-![Meet your match](./Images/JSON.png)
+`Maximum score: 18`
+![Home page](./public/image/maxScore.png)
 
 ## BUILDING TOOLS
 - FRONT END
     - HTML, CSS
     - Javascript and jQuery
     - Bootstrap and MDBootstrap
-- BACK END
-    - node.js
-    - Express
-    - Handlebars
-    - Mongoose
-    - Axios
-    - Cheerio
-    - DotEnv
-    - NodeMon
-- Deployment
-    - Mongo DB (mLab MongoDB)
-    - Heroku
+    - React
 
 ## QUESTIONS OR COMMENTS
 - Feel free to contact the developer @ <jdi@idiaz.ca>!
-- See the project [live](https://idiaz-scraper.herokuapp.com/).
+- See the project [live](#).

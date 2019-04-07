@@ -1,0 +1,14 @@
+.jumbotron {
+    height: 80px;
+    padding: 0px;
+}
+
+.thisRow{
+    height: 600px;
+}
+
+#msg{
+        color: red;
+        font-weight: 600;
+        font-size: 20px;
+}

@@ -1,29 +1,25 @@
-import React from "react";
-import FriendCard from "./components/FriendCard";
-import Wrapper from "./components/Wrapper";
-import friends from "./friends.json";
-import "./App.css";
+import React, { Component } from 'react';
+import Game from './components/Game';
 
-class App extends React.Component {
-  state = {
-    friends: friends
-  };
-
-  handleDeleteFriend = id => {
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    this.setState({friends: friends})
-  };
-
+class App extends Component {
+  
   render() {
     return (
-      <Wrapper>
-        <h1 className="title">Friends List</h1>
-        {this.state.friends.map(friend => (
-          <FriendCard key={friend.key} data={friend} handleDeleteFriend={this.handleDeleteFriend}/>
-        ))}
-      </Wrapper>
+      <div>
+        <section className="jumbotron pink lighten-4 text-center">
+          <div className="container">
+            <h2><strong>Score: <span id="score">0</span></strong>| Best record: <span id="record">0</span></h2>
+            <p>
+            </p>
+          </div>
+        </section>
+
+        <div className="container gems">
+          <Game />
+        </div>
+      </div>
     );
   }
-};
+}
 
 export default App;

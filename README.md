@@ -2,10 +2,10 @@
 
 > **Cretaed by:**     [Juan I Diaz](http://www.idiaz.ca/) (jdi@idiaz.ca)
 
-> **Date:**           March/April 2019
+> **Date:**           April 2019
 
 ## DESCRIPTION
-This **FULL STACK** project is a memory game where the user have to click on 18 images of gems. The images are arranged in three rows of six. Every time the user clicks on a gem, the location of the images is shuffled, then the user needs to clik on a gem that has not been clicked on before. If th euser clicks on a diferent gem, the images will shuffle again and the gmae will continue. If the user clocks on a previously clicked image, the game is over. The score and maximum recors is kept per browser session.
+This project is a memory game where the user have to click on 18 images of gems. The images are arranged in three rows of six. Every time the user clicks on a gem, the location of the images is shuffled, then the user needs to clik on a gem that has not been clicked on before. If th euser clicks on a diferent gem, the images will shuffle again and the gmae will continue. If the user clocks on a previously clicked image, the game is over. The score and maximum recors is kept per browser session.
 
 This project uses React to handle the components of the game.
 
